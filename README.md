@@ -8,7 +8,7 @@
 <br>git push -u origin master
 
 <br>
-<br><b>…or push an existing repository from the command line
+<br><b>…or push an existing repository from the command line</b>
 <br>
 <br>git remote add origin https://github.com/ngiabsadab/AngularJS.git
 <br>git push -u origin master
