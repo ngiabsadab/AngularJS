@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <head>
+        <title>Learning AngularJS</title>
+    	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js" type="text/javascript"></script>
+    	<script src="app.js" type="text/javascript"></script> 
+    	<script src="maincontroller.js" type="text/javascript"></script>
+
+    </head>
+<body>
+	<div id='cuntent' ng-app='MyTutorialApp' ng-controller='MainController'>
+        <h1>{{hello}}</h1>
+	<select ng-model='selectedPerson' ng-options='obj.name for obj in people'></select>
+    <select ng-model='selectedGenre'>
+      <option ng-repeat='label in people[selectedPerson.id].music'>{{label}}</option>
+    </select>
+    </div>
+
+</body>
+</html>
